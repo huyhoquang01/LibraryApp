@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".QuanLi.QuanLiNguoiDungActivity">
+
+    <TextView
+        android:id="@+id/txtThemNguoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="SỬA SÁCH"
+        android:textAlignment="center"
+        android:textColor="#A733BC"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtSuaTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Tên sách"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spnSuaMaTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_box" />
+
+    <EditText
+        android:id="@+id/edtSuaTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Tác giả"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSuaNXB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Nhà Xuất Bản"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSuaSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSuaGiaBan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Giá bán"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSuaSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button"
+            android:text="Cập nhật"
+
+            android:textColor="#673AB7"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btnHuySuaSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button"
+            android:text="Hủy"
+
+            android:textColor="#673AB7"
+            android:textSize="19sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/itemSach"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="7dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivAvatarSach"
+            android:layout_alignParentLeft="true"
+            android:layout_width="70dp"
+            android:src="@drawable/inspiration"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/tvTenSach"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tvTenSach"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="Ten Sach"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_below="@id/tvTenSach"
+            android:layout_toRightOf="@id/ivAvatarSach"
+            android:text="Tác giả: "
+            android:layout_marginLeft="8dp"
+            android:textColor="#000"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivAvatarSach" />
+
+        <TextView
+            android:id="@+id/tvTacGia"
+            android:layout_below="@id/tvTenSach"
+            android:layout_toRightOf="@id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2196F3"
+            android:text="Tác giả 1"
+            android:layout_toEndOf="@id/textView3" />
+
+        <TextView
+            android:id="@+id/tvNXB"
+            android:layout_below="@id/tvTacGia"
+            android:layout_toRightOf="@id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2196F3"
+            android:text="NXB 1"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/textView4" />
+
+        <TextView
+            android:id="@+id/tvSoLuong"
+            android:layout_below="@id/tvNXB"
+            android:layout_toRightOf="@id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="#2196F3"
+            android:text="nnnn"
+            android:layout_toEndOf="@id/textView5" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAvatarSach"
+            android:text="NXB: "
+            android:layout_below="@id/textView3"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000"
+            android:layout_toEndOf="@id/ivAvatarSach"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAvatarSach"
+            android:text="Số lượng: "
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#000"
+            android:layout_below="@id/textView4"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/ivAvatarSach" />
+
+        <ImageView
+            android:id="@+id/ivXoaSach"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_close" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tvGiaSach"
+            android:layout_below="@id/tvNXB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textView6"
+            android:text="Giá sách"
+            android:textColor="#FF0000"
+            android:layout_toStartOf="@id/textView6" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#FF0000"
+            android:layout_below="@id/tvNXB"
+            android:text=" vnđ"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

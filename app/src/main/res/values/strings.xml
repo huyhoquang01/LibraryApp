@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SuperAndroidProject</string>
+
+    <string-array name="spinner_items">
+        <item>1 | Công Nghệ Thông Tin</item>
+        <item>2 | Kế Toán</item>
+        <item>3 | Ngoại Ngữ</item>
+        <item>4 | Văn Học</item>
+        <item>5 | Lịch Sử</item>
+        <item>6 | Địa Lý</item>
+    </string-array>
+</resources>

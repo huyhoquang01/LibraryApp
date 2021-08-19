@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    tools:context=".MainActivity">
+    <!--    3C64FF-->
+    <TextView
+        android:background="@drawable/support"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-30dp"
+        android:layout_height="220dp"
+        android:text="Book Manager App \n -------------"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:fontFamily="casual"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:id="@+id/tvNguoiDung"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/main_ui"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Người dùng"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:drawableTopCompat="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/tvTheLoai"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Thể loại"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:background="@drawable/main_ui"
+            app:drawableTopCompat="@drawable/ic_theloai"/>
+
+
+        <TextView
+            android:id="@+id/tvSach"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Sách"
+            android:layout_below="@id/tvNguoiDung"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:elevation="15dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:background="@drawable/main_ui"
+            app:drawableTopCompat="@drawable/ic_sach" />
+
+        <TextView
+            android:id="@+id/tvHoaDon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Hóa đơn"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvTheLoai"
+            android:layout_marginTop="35dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:background="@drawable/main_ui"
+            app:drawableTopCompat="@drawable/ic_hoadon"/>
+
+        <TextView
+            android:id="@+id/tvSachBanChay"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Sách bán chạy"
+            android:layout_below="@id/tvSach"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:elevation="15dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:background="@drawable/main_ui"
+            app:drawableTopCompat="@drawable/ic_sachbanchay" />
+
+        <TextView
+            android:id="@+id/tvThongKe"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Thống kê"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvHoaDon"
+            android:layout_marginTop="35dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:background="@drawable/main_ui"
+            app:drawableTopCompat="@drawable/ic_thongke"/>
+    </RelativeLayout>
+</RelativeLayout>

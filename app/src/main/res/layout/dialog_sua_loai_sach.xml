@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".QuanLi.QuanLiNguoiDungActivity">
+
+    <TextView
+        android:id="@+id/txtThemNguoiDung"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#A733BC"
+        android:layout_height="wrap_content"
+        android:text="SỬA LOẠI SÁCH"
+
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/edtSuaTenLoaiSach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_box"
+        android:hint="Tên loại sách"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/edtSuaMoTa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:ems="10"
+        android:hint="Mô tả"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:paddingStart="10dp" />
+    <EditText
+        android:id="@+id/edtSuaViTri"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_box"
+        android:maxLength="10"
+        android:hint="Vị trí"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSuaLoaiSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button"
+            android:text="Cập nhật"
+
+            android:textColor="#673AB7"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btnHuySuaLoaiSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/customize_button"
+            android:text="Hủy"
+
+            android:textColor="#673AB7"
+            android:textSize="19sp" />
+    </LinearLayout>
+</LinearLayout>

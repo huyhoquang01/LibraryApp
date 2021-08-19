@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemHoaDon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:elevation="7dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivAvatarHoaDon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            tools:srcCompat="@drawable/emthree" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivAvatarHoaDon"
+            android:layout_toEndOf="@id/ivAvatarHoaDon"
+            android:textColor="#000"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Họ tên: "
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/txtTenKhachHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/textView"
+            android:layout_toRightOf="@id/textView"
+            android:text="Họ tên"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTenKhachHang"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/ivAvatarHoaDon"
+            android:layout_toRightOf="@+id/ivAvatarHoaDon"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="Ngày mua: " />
+
+        <TextView
+            android:id="@+id/txtNgayMua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTenKhachHang"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:hint="Ngày mua"
+            android:textColor="#2196F3" />
+
+        <ImageView
+            android:id="@+id/ivXoaHoaDon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_close" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
