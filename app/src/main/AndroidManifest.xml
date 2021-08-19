@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.superandroidproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".QuanLi.QuanLiHDCTActivity"
+            android:label="Chi tiết Hóa đơn"
+            android:parentActivityName=".QuanLi.QuanLiHoaDonActivity"></activity>
+        <activity
+            android:name=".ThongKeActivity"
+            android:label="Thống kê" />
+        <activity
+            android:name=".SachBanChayActivity"
+            android:label="Sách bán chạy" />
+        <activity
+            android:name=".QuanLi.QuanLiHoaDonActivity"
+            android:label="Hóa đơn"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".QuanLi.QuanLiNguoiDungActivity"
+            android:label="Quản lí Người dùng"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".QuanLi.QuanLiSachActivity"
+            android:label="Quản lí Sách"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".QuanLi.QuanLiLoaiSachActivity"
+            android:label="Quản lí Loại sách"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DoiMatKhauActivity"
+            android:label="Đổi mật khẩu"
+            android:parentActivityName=".QuanLi.QuanLiNguoiDungActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Đăng nhập">
+
+        </activity>
+        <activity android:name=".WelcomeActivity">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
