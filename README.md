@@ -1,2 +1,2 @@
 # LibraryApp
-My another assignment.
+My other assignment.
